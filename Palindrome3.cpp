@@ -1,22 +1,18 @@
 #include<iostream>
 using namespace std;
 
+
+int fib(int n) {
+    if(n==0) 
+		return 0;
+    if(n==1) 
+		return 1;
+    return fib(n-1)+fib(n-2);
+}
 int main() {
-	int rev = 0;
 	int n;
 	cin>>n;
-    int original = n;
-	while(n>0){
-		int lastdigit = n%10;
-		n=n/10;
-		rev = rev * 10 + lastdigit;
-	}
-    if(original == rev){
-        cout<<" Palindrome ";
-    }
-    else{
-        cout<<" Not a Palindrome ";
-    }
+	cout<<fib(n);
 
-
+    return 0;
 }
