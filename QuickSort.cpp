@@ -6,11 +6,11 @@ int partition(int arr[], int low, int high);
 
 int main() {
     int n;
-    cout << "Enter the size of the array: ";
+    cout << "Enter the size of the array : ";
     cin >> n;
     
     int arr[n];
-    cout << "Enter your array elements: ";
+    cout << "Enter your array elements : ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
