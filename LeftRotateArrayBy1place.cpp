@@ -22,7 +22,7 @@ void solve(int arr[], int n) {
 
 }
 int main() {
-  int n;
+    int n;
     cout<<"enter the size of array\n"<<endl;
     cin>>n;
     int arr[n];
