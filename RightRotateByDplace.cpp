@@ -1,17 +1,18 @@
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
-void Rotateleft(int arr[], int n, int k)
+void Rotateright(int arr[], int n, int k)
 {
    k = k % n ;
+  reverse(arr,arr+n);
   reverse(arr,arr+k);
   reverse(arr+k,arr+n);
-  reverse(arr,arr+n);
+
 
 }
 int main()
 {
-   int n;
+    int n;
     cout<<"enter the size of array\n"<<endl;
     cin>>n;
     int arr[n];
@@ -24,8 +25,7 @@ int main()
     cout<<"enter the number of you want to rotate\n"<<endl;
     cin>>k;
 
-
-  Rotateleft(arr, n, k);
+  Rotateright(arr, n, k);
 
   cout << "After Rotating the elements to right " << endl;
 
