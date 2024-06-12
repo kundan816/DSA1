@@ -1,5 +1,7 @@
 // better --> using hashing  
 
+// note --> this is optimal for array containing negative elememts also
+
 
 
 
@@ -51,7 +53,7 @@
 
 // optimal --> 2 pointer approach 
 
-
+// note --> this is optimal only for array with positive elements
 
 
 
