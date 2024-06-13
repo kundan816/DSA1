@@ -39,16 +39,16 @@ using namespace std;
 
 int maxProfit(vector<int> &arr) {
     int maxProfit = 0;
-    int n = arr.size();
-    int minPrice = INT_MAX;
+    
+    int mini = arr[0];
 
-    for (int i = 0; i < arr.size(); i++) {
+    for (int i = 1; i < arr.size(); i++) {
         // find profit
-        int profit = arr[i] - minPrice;
+        int profit = arr[i] - mini;
         // update profit
         maxProfit = max(maxProfit, profit);
         // update mini
-           minPrice = min(minPrice, arr[i]);
+        mini = min(mini, arr[i]);
     }
     
     return maxProfit;
