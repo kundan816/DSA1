@@ -117,13 +117,15 @@ int main()
 {
     int arr[] =  { -2,-3,4,-1,-2,1,5,-3};
     int n = 8;
-    
+
     long long maxSum = maxSubarraySum(arr, n);
     cout << "The maximum subarray sum is: " << maxSum << endl;
     return 0;
 }
 
 
+// follow up questio --> 
 
+// printing the sum of longest subarray
 
 
