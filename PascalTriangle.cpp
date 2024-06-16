@@ -1,13 +1,27 @@
 // type1 -->
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int nCr(int n, int r) {
+//     long long res = 1;
+
+//     // calculating nCr:
+//     for (int i = 0; i < r; i++) {
+//         res = res * (n - i);
+//         res = res / (i + 1);
+//     }
+//     return res;
+// }
 
 
 
 
 // type 2 -->
 
+
+    // Brute -->
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,3 +52,5 @@ int main()
     pascalTriangle(n);
     return 0;
 }
+
+// optimaal
