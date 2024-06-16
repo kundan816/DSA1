@@ -115,7 +115,7 @@ vector<vector<int>> pascalTriangle(int n) {
 int main()
 {
     int n = 5;
-    vector<vector<int>> ans = pascalTriangle(n);
+    vector<vector<int>> ans = pascalTriangle( n );
     for (auto it : ans) {
         for (auto ele : it) {
             cout << ele << " ";
