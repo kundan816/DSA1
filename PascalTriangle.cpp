@@ -91,7 +91,7 @@ using namespace std;
 vector<int> generateRow(int row) {
     long long ans = 1;
     vector<int> ansRow;
-    ansRow.push_back(1); //inserting the 1st element
+    ansRow.push_back( 1 ); //inserting the 1st element
 
     //calculate the rest of the elements:
     for (int col = 1; col < row; col++) {
