@@ -97,7 +97,7 @@ vector<int> generateRow(int row) {
     for (int col = 1; col < row; col++) {
         ans = ans * (row - col);
         ans = ans / col;
-        ansRow.push_back(ans);
+        ansRow.push_back( ans );
     }
     return ansRow;
 }
