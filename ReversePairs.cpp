@@ -99,7 +99,7 @@ int mergeSort(vector<int> &arr, int low, int high) {
     cnt += mergeSort(arr, mid + 1, high); // right half
     cnt += countPairs(arr, low, mid , high); //Modification
 
-    merge(arr, low, mid, high);  // merging sorted halves
+    merge(arr, low , mid , high);  // merging sorted halves
     return cnt;
 }
 
