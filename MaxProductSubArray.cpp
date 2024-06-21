@@ -47,7 +47,6 @@ int maxProductSubArray(vector<int>& nums)
         int p = 1;
         for(int j=i;j<nums.size();j++) 
         {
-         
            p *= nums[j];
         }
         result = max(result,p);
