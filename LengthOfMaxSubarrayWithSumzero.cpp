@@ -57,10 +57,10 @@ int maxLen(int A[], int n)
         else {
             if(mpp.find(sum) != mpp.end()) 
             {
-                maxi = max(maxi, i - mpp[sum]); 
+                maxi = max(maxi, i - mpp[sum]);   //update maaxi subtracting index
             }
             else {
-                mpp[sum] = i;
+                mpp[sum] = i;   //store in hashmap
             }
         }   
     }
