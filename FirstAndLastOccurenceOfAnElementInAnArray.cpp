@@ -127,7 +127,7 @@ using namespace std;
 int firstOcuurence(vector<int> arr, int n, int x) {
     int low = 0;
     int high = n - 1;
-    int ans = n;
+    int first  = -1;
 
     while (low <= high) 
     {
@@ -135,7 +135,7 @@ int firstOcuurence(vector<int> arr, int n, int x) {
         // maybe an answer
         if (arr[mid] == x) 
         {
-            ans = mid;
+            first = mid;
             high = mid - 1;
         }
         else if (arr[mid]< x ){
@@ -145,21 +145,21 @@ int firstOcuurence(vector<int> arr, int n, int x) {
             high = mid - 1;
         }
     }
-    return ans;
+    return first; // return
 }
 
 
 int lastOccurence(vector<int> &arr, int n, int x) {
     int low = 0;
     int high = n - 1;
-    int ans = n;
+    int last = -1;
 
     while (low <= high) {
         int mid = (low + high) / 2;
         // maybe an answer
         if (arr[mid] == x) 
         {
-            ans = mid;
+            last = mid;
            low = mid +1;
         }
         else if (arr[mid]< x ){
@@ -170,7 +170,7 @@ int lastOccurence(vector<int> &arr, int n, int x) {
         }
        
     }
-    return ans;
+    return last;
 }
 
 pair<int, int> firstAndLastOccurence(vector < int > & arr , int n, int key){
