@@ -86,11 +86,18 @@ int singleNonDuplicate(vector<int>& arr) {
     int n = arr.size(); //size of the array.
 
     //Edge cases:
-    if (n == 1) return arr[0];
-    if (arr[0] != arr[1]) return arr[0];
-    if (arr[n - 1] != arr[n - 2]) return arr[n - 1];
+    if (n == 1) 
+        return arr[0];
 
-    int low = 1, high = n - 2;
+    if (arr[0] != arr[1]) 
+        return arr[0];
+
+    if (arr[n - 1] != arr[n - 2]) 
+        return arr[n - 1];
+
+    int low = 1;
+    int high = n - 2;
+    
     while (low <= high) {
         int mid = (low + high) / 2;
 
