@@ -76,7 +76,7 @@ int NthRoot(int n, int m) {
     while (low <= high) {
         int mid = (low + high) / 2;
 
-        int midN = func(mid, n, m);
+        int midN = func(mid, n , m);
 
         if (midN == 1) 
         {
