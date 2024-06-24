@@ -39,22 +39,22 @@
 
 
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int floorSqrt(int n) {
-    int ans = sqrt(n);
-    return ans;
-}
+// int floorSqrt(int n) {
+//     int ans = sqrt(n);
+//     return ans;
+// }
 
-int main()
-{
-    int n = 28;
-    int ans = floorSqrt(n);
-    cout << "The floor of square root of " << n
-         << " is: " << ans;
-    return 0;
-}
+// int main()
+// {
+//     int n = 28;
+//     int ans = floorSqrt(n);
+//     cout << "The floor of square root of " << n
+//          << " is: " << ans;
+//     return 0;
+// }
 
 
 
@@ -67,37 +67,37 @@ int main()
 
 
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// int floorSqrt(int n) 
-// {
-//     int low = 1, high = n;
+int floorSqrt(int n) 
+{
+    int low = 1, high = n;
 
    
-//     while (low <= high) {
-//         long long mid = (low + high) / 2;
-//         long long val = mid * mid;
-//         if (val <= (long long)(n)) {
-//             //eliminate the left half:
-//             low = mid + 1;
-//         }
-//         else {
-//             //eliminate the right half:
-//             high = mid - 1;
-//         }
-//     }
-//     return high;
-// }
+    while (low <= high) {
+        long long mid = (low + high) / 2;
+        long long val = mid * mid;
+        if (val <= (long long)(n)) {
+            //eliminate the left half:
+            low = mid + 1;
+        }
+        else {
+            //eliminate the right half:
+            high = mid - 1;
+        }
+    }
+    return high;
+}
 
-// int main()
-// {
-//     int n = 28;
-//     int ans = floorSqrt(n);
-//     cout << "The floor of square root of " << n
-//          << " is: " << ans << "\n";
-//     return 0;
-// }
+int main()
+{
+    int n = 28;
+    int ans = floorSqrt(n);
+    cout << "The floor of square root of " << n
+         << " is: " << ans << "\n";
+    return 0;
+}
 
 
 
