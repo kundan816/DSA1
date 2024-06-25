@@ -64,8 +64,9 @@ using namespace std;
 int findMax(vector<int> &v) {
     int maxi = INT_MIN;
     int n = v.size();
-    //find the maximum:
-    for (int i = 0; i < n; i++) {
+    
+    for (int i = 0; i < n; i++) 
+    {
         maxi = max(maxi, v[i]);
     }
     return maxi;
@@ -76,6 +77,7 @@ int sumByD(vector<int> &arr, int div) {
     int n = arr.size(); 
 
     int sum = 0;
+
     for (int i = 0; i < n; i++) 
     {
         sum += ceil((double)(arr[i]) / (double)(div));
@@ -94,6 +96,7 @@ int smallestDivisor(vector<int>& arr, int limit) {
     //Apply binary search:
     while (low <= high) {
         int mid = (low + high) / 2;
+
         if (sumByD(arr, mid) <= limit) 
         {
             high = mid - 1;
