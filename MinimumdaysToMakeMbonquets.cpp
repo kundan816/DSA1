@@ -103,7 +103,7 @@ bool possible(vector<int> &arr, int day, int m, int k) {
 
 
 int roseGarden(vector<int> arr, int k, int m) {
-    long long val = m * k ;
+   long long val = static_cast<long long>(m) * k;  
     int n = arr.size(); 
 
     if (val > n) 
