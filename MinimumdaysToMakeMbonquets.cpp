@@ -103,9 +103,12 @@ bool possible(vector<int> &arr, int day, int m, int k) {
 
 
 int roseGarden(vector<int> arr, int k, int m) {
-    long long val = m * 1ll * k * 1ll;
-    int n = arr.size(); //size of the array
-    if (val > n) return -1; //impossible case.
+    long long val = m * k ;
+    int n = arr.size(); 
+
+    if (val > n) 
+        return -1; //impossible case.
+
     //find maximum and minimum:
     int mini = INT_MAX, maxi = INT_MIN;
     for (int i = 0; i < n; i++) {
@@ -117,10 +120,12 @@ int roseGarden(vector<int> arr, int k, int m) {
     int low = mini, high = maxi;
     while (low <= high) {
         int mid = (low + high) / 2;
-        if (possible(arr, mid, m, k)) {
+        if (possible(arr, mid, m, k))
+        {
             high = mid - 1;
         }
-        else low = mid + 1;
+        else 
+            low = mid + 1;
     }
     return low;
 }
