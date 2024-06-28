@@ -11,7 +11,8 @@ using namespace std;
    {
     if (arr1[i] <= arr2[j]) 
     {
-      if (Union.size() == 0 || Union.back() != arr1[i]){
+      if (Union.size() == 0 || Union.back() != arr1[i])
+      {
         Union.push_back(arr1[i]);
       }
       i++;
@@ -30,7 +31,8 @@ using namespace std;
   while (i < n) // IF any element left in arr1
   {
     
-      if (Union.size() == 0 || Union.back() != arr1[i]){
+      if (Union.size() == 0 || Union.back() != arr1[i])
+      {
         Union.push_back(arr1[i]);
       }
       i++;
