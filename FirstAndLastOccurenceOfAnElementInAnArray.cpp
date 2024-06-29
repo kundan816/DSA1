@@ -138,10 +138,12 @@ int firstOcuurence(vector<int> arr, int n, int x) {
             first = mid;
             high = mid - 1;
         }
-        else if (arr[mid]< x ){
+        else if (arr[mid]< x )
+        {
             low = mid + 1; // look on the right
         }
-        else{
+        else
+        {
             high = mid - 1;
         }
     }
