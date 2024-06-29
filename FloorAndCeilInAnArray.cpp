@@ -8,12 +8,13 @@ int findFloor(int arr[], int n, int x) {
 	while (low <= high) {
 		int mid = (low + high) / 2;
 		// maybe an answer
-		if (arr[mid] <= x) {
+		if (arr[mid] <= x) 
+		{
 			ans = arr[mid];
-		
 			low = mid + 1;
 		}
-		else {
+		else 
+		{
 			high = mid - 1; // look on the right
 		}
 	}
