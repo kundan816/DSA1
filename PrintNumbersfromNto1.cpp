@@ -24,7 +24,8 @@
 using namespace std;
 
 void func(int i,int n){
-    if(i>n){
+    if(i>n)
+    {
         return;
     }
      func(i+1,n);

@@ -38,7 +38,7 @@ int upperBound(vector<int> &arr, int x, int n) {
 
     while (low <= high) {
         int mid = (low + high) / 2;
-        // maybe an answer
+        // may be  an  answer
         if (arr[mid] > x) 
         {
             ans = mid;
