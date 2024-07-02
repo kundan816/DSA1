@@ -78,11 +78,13 @@ int floorSqrt(int n)
     while (low <= high) {
         long long mid = (low + high) / 2;
         long long val = mid * mid;
-        if (val <= (long long)(n)) {
+        if (val <= (long long)(n)) 
+        {
             //eliminate the left half:
             low = mid + 1;
         }
-        else {
+        else 
+        {
             //eliminate the right half:
             high = mid - 1;
         }
