@@ -94,12 +94,14 @@ long long maxSubarraySum(int arr[], int n) {
 
         sum += arr[i];
 
-        if (sum > maxi) {
+        if (sum > maxi) 
+        {
             maxi = sum;
         }
 
         // If sum < 0: discard the sum calculated
-        if (sum < 0) {
+        if (sum < 0) 
+        {
             sum = 0;
         }
     }
