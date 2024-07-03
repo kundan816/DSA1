@@ -108,12 +108,14 @@ int singleNonDuplicate(vector<int>& arr) {
 
         //we are in the left:
         if ((mid % 2 == 1 && arr[mid] == arr[mid - 1])
-                || (mid % 2 == 0 && arr[mid] == arr[mid + 1])) {
+                || (mid % 2 == 0 && arr[mid] == arr[mid + 1])) 
+        {
             //eliminate the left half:
             low = mid + 1;
         }
         //we are in the right:
-        else {
+        else 
+        {
             //eliminate the right half:
             high = mid - 1;
         }
