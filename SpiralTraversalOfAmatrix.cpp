@@ -37,8 +37,10 @@ vector<int> printSpiral(vector<vector<int>> mat) {
     }
 
     // For moving bottom to top.
-    if (left <= right) {
+    if (left <= right) 
+    {
       for (int i = bottom; i >= top; i--)
+      
         ans.push_back(mat[i][left]);
 
       left++;
