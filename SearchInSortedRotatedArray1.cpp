@@ -48,12 +48,15 @@ int search(vector<int>& arr, int n, int k) {
         if (arr[mid] == k) return mid;
 
         //if left part is sorted:
-        if (arr[low] <= arr[mid]) {
-            if (arr[low] <= k && k <= arr[mid]) {
+        if (arr[low] <= arr[mid]) 
+        {
+            if (arr[low] <= k && k <= arr[mid]) 
+            {
                 //element exists:
                 high = mid - 1;
             }
-            else {
+            else 
+            {
                 //element does not exist:
                 low = mid + 1;
             }
