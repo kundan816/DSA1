@@ -62,11 +62,13 @@ int search(vector<int>& arr, int n, int k) {
             }
         }
         else { //if right part is sorted:
-            if (arr[mid] <= k && k <= arr[high]) {
+            if (arr[mid] <= k && k <= arr[high]) 
+            {
                 //element exists:
                 low = mid + 1;
             }
-            else {
+            else 
+            {
                 //element does not exist:
                 high = mid - 1;
             }
