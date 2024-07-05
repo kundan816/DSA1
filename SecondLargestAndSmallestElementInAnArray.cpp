@@ -34,16 +34,19 @@ int main() {
     int arr[n];
 
     cout << "Enter the array elements: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         cin >> arr[i];
     }
 
     int secondLargest = findSecondLargest(arr, n);
 
-    if (secondLargest == -1) {
+    if (secondLargest == -1) 
+    {
         cout << "There is no second largest element." << endl;
     } 
-    else{
+    else
+    {
         cout << "The second largest element is: " << secondLargest << endl;
     }
 
