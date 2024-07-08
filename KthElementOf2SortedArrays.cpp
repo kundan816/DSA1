@@ -114,7 +114,7 @@ int kthElement(vector<int> &a, vector<int>& b, int m, int n, int k) {
         else if (l1 > r2) high = mid1 - 1;
         else low = mid1 + 1;
     }
-    return 0; //dummy statement
+    return 0;
 
 }
 
