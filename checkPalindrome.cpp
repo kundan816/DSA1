@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 bool checkPalindrome(string s) {
   int start = 0;
