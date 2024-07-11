@@ -21,7 +21,7 @@ public:
                 r++; 
                 i++;
             } 
-            // i ko space dikh gy so reverse from  l to r
+            // i ko space dikh gy  and l and r at different index so reverse from  l to r
             if(l < r){
                 reverse(s.begin()+l , s.begin()+r);
 
@@ -31,7 +31,7 @@ public:
                 l = r;   // l ko r k paas le aao next word start hoga ab
             }
 
-            i++ ; 
+            i++ ;   //i ko space dikh gy but i and r same index pe hai so i ko aage badhao
 
         }
 
