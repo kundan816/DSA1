@@ -45,27 +45,49 @@ void print(Node* head)
     cout << endl;
 }
 
-Node* DeleteFromTail(Node* head){
-    if(head == NULL && head->next == NULL)
+Node* insertAtk(Node* head , int el , int k){
+    if(head == NULL)          // if ll is empty
     {
-        return NULL;
+        if(k==1)
+        {
+            return new Node(el);
+        }
+        else
+        {
+            return head;
+        }
+    
     }
 
+    if(k==1){              //if ll has some element and k = 1
+        return new Node(el,head);
+    }
+
+    int cnt = 0;
     Node* temp = head;
-    while(temp->next->next!= NULL)
-    {
+
+    while(temp != NULL){
+        cnt++;
+
+        if(cnt ==k-1){
+            Node*x = new Node(el);
+            x->next = temp->next;
+            temp->next = x;
+            break;
+
+            // or
+            // Node*x = new Node(el,temp->next);
+            // temp->next = x;
+            // break;
+        }    
         temp = temp->next;
     }
-    
-    delete temp->next;
-    temp->next = NULL;
     return head;
-    
 }
 
 int main(){
     vector<int> arr = {2,3,1,8} ;
     Node* head = convertArrToLL(arr);
-    head = DeleteFromTail(head);
+    head = insertAtk(head,45,2);
     print(head);
 }
