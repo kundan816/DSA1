@@ -46,6 +46,10 @@ void print(Node* head)
 }
 
 Node* DeleteFromHead(Node* head){
+     if(head == NULL)
+    {
+        return NULL;
+    }
     Node* temp = head;
     head = head->next;
     delete temp;
