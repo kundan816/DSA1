@@ -45,13 +45,13 @@ void print(Node* head)
     cout << endl;
 }
 
-Node* removeK(Node* head , int k){
+Node* deleteEl(Node* head , int el){
     if(head == NULL )
     {
         return NULL;
     }
 
-    if(k==1)                         // if element is 1st element
+    if(head->data == el)          // if element is 1st element
     {
         Node* temp = head;
         head = head->next;
@@ -59,14 +59,14 @@ Node* removeK(Node* head , int k){
         return head;
     }
     
-    int cnt = 0;
+   
     Node* prev = NULL;
     Node* temp = head;
 
     while(temp != NULL)
     {
-        cnt++;
-        if(cnt == k)
+      
+        if(temp->data == el)
         {
             prev->next = prev->next->next;      // or prev->next = temp->next
             delete temp;
@@ -81,7 +81,6 @@ Node* removeK(Node* head , int k){
 int main(){
     vector<int> arr = {2,3,1,8} ;
     Node* head = convertArrToLL(arr);
-    // head = removeK(head , 2);
-    head = removeK(head , 3);
+    head = deleteEl(head,8);
     print(head);
 }
