@@ -32,24 +32,27 @@ Node* convertArrToLL(vector<int>& arr){
     return head;
 }
 
-int LengthOfLL(Node* head){
-    Node* temp = head;
-    int count = 0;
-    while(temp)                             // or while(temp != nillptr)
-    {
-        count++;
-        temp = temp->next;
+bool searchKey(Node* head, int key) {
+        Node* temp = head;
+        
+        while(temp)                             // or while(temp != nullptr)
+        {
+            if((temp->data) == key)
+            {
+                return true;
+            }
+            temp = temp->next;
+        }
+        return false;
     }
-    return count;
-}
 
 int main(){
     vector<int> arr = {2,3,1,8} ;
     Node* head = convertArrToLL(arr);
     // cout<<head->data <<" ";
 
-    int len = LengthOfLL(head);
-    cout<<"Length of Linked List is: "<<len<<endl;
+   cout<<searchKey(head,8)<<endl;
+   cout<<searchKey(head,9)<<endl;
 
 
 }
