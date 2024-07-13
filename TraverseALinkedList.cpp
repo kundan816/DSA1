@@ -35,6 +35,15 @@ Node* convertArrToLL(vector<int>& arr){
 int main(){
     vector<int> arr = {2,3,1,8} ;
     Node* head = convertArrToLL(arr);
-    cout<<head->data <<" ";
+    // cout<<head->data <<" ";
+
+    // traverse in ll
+    Node* temp = head;
+    while(temp)                                         // or while(temp != nillptr)
+    {
+        cout<<temp->data <<" ";
+        temp = temp->next;
+    }
+    
 
 }
