@@ -48,8 +48,21 @@ void print(Node* head)
     cout << endl;
 }
 
+Node* deleteFromHead(Node* head)
+{
+    if(head == NULL || head->next == NULL){
+        return head;
+    } 
+    Node* prev = head;
+    head = head->next;
+    
+    head->back = nullptr;
+    prev->next = nullptr;
 
+    delete prev;
+    return head;
 
+}
 int main(){
     vector<int> arr = {1, 2, 3, 4, 5};
     Node* head = convertArrToDLL(arr);
