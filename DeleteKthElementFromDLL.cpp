@@ -95,7 +95,8 @@ Node*deleteFromKthPosition(Node* head, int k){
 
     while(temp!= NULL){
         cnt++;
-        if(cnt==k){
+        if(cnt==k)
+        {
             break;
         }
         temp = temp->next;
