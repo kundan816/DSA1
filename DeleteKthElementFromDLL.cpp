@@ -105,7 +105,7 @@ Node*deleteFromKthPosition(Node* head, int k){
     Node* front = temp->next;
 
     if(prev ==NULL || front == NULL){      // 1 element
-        return head;
+        return NULL;
     }
 
     else if(prev == NULL){                  // head

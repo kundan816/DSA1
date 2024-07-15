@@ -37,6 +37,7 @@ Node* convertArrToLL(vector<int>& arr)
 void print(Node* head)
 {
     Node* temp = head;
+    
     while(temp)
     {
         cout << temp->data << " ";
