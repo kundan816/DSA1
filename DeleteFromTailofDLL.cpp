@@ -50,7 +50,8 @@ void print(Node* head)
 
 Node* deleteFromTail(Node* head)
 {
-    if(head == NULL || head->next == NULL){
+    if(head == NULL || head->next == NULL)
+    {      
         return head;
     } 
 
@@ -60,8 +61,10 @@ Node* deleteFromTail(Node* head)
         tail = tail->next;
     }
     Node* secondLast = tail->back;
+
     secondLast->next = nullptr;
     tail->back = nullptr;
+
     delete tail;
     return head;
 
