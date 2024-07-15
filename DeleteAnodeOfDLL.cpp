@@ -57,7 +57,7 @@ void deleteNode(Node* temp){
     if(front == NULL){             // tail
         prev -> next = nullptr;
         temp ->back = nullptr;
-        free(temp);
+        free(temp);               //delete temp;
         // return;
     } 
 
