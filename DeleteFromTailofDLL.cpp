@@ -29,7 +29,7 @@ Node* convertArrToDLL(vector<int>& arr)
 
     for(int i =  1; i < arr.size(); i++)
     {
-        Node* temp = new Node(arr[i],nullptr,prev);
+        Node* temp = new Node(arr[i], nullptr , prev);
         prev->next = temp;
         prev = temp;
     }
