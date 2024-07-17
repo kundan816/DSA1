@@ -1,4 +1,4 @@
-// Brute -->
+// Better -->
 
 
 // #include <bits/stdc++.h>
@@ -113,7 +113,7 @@
 
 
 
-// Better -->
+// Optimal -->
 
 #include <bits/stdc++.h>
 
