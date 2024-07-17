@@ -57,7 +57,7 @@
 //     // Traverse the list using temp
 //     while(temp!=NULL){
 //         // check if temp has been encountered again
-//         if(mp.find(temp)!=mp.()){
+//         if(mp.find(temp)!=mp.end()){
 //             // A loop is detected hence return temp
 //             return temp;
 //         }
