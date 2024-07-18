@@ -192,3 +192,13 @@ int main() {
     head = DeleteNthNodefromEnd(head, N);
     printLinkedList(head);
 }
+
+
+
+
+
+
+
+
+
+        
