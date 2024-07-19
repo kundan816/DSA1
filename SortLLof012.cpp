@@ -52,6 +52,60 @@ using namespace std;
     //   }
        
     //     return head;
+
+
+
+
+
+    
+    // Optimal -->
+    
+        //    if(head==NULL || head->next==NULL) {
+        //         return head;
+        //    }
+        
+        //    Node* zerohead=new Node(-1);
+        //    Node* Onehead=new Node(-1);
+        //    Node* Twohead=new Node(-1);
+           
+        //    Node* zero=zerohead;
+        //    Node* one=Onehead;
+        //    Node* two=Twohead;
+           
+        //    Node* temp = head;
+           
+        //    while(temp!=NULL)
+        //    {
+        //        if(temp->data==0)
+        //        {
+        //            zero->next=temp;
+        //            zero=zero->next;
+        //        }
+        //        if(temp->data==1)
+        //        {
+        //            one->next=temp;
+        //            one=one->next;
+        //        }
+        //        if(temp->data==2)
+        //        {
+        //            two->next=temp;
+        //            two=two->next;
+        //        }
+        //        temp=temp->next;
+        //    }
+        //    zero->next= (Onehead->next) ? (Onehead->next) : (Twohead->next);
+        //    one->next=Twohead->next;
+        //    two->next=NULL;
+           
+        //    delete zerohead;
+        //    delete Onehead;
+        //    delete Twohead;
+           
+        //    return zerohead->next;
+    
+
     
     // }
 // };
+
+
