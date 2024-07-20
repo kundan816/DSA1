@@ -1,0 +1,38 @@
+// using linearly
+
+// #include<iostream>
+// using namespace std;
+
+// void func(int i,int n){
+//     if(i<1){
+//         return;
+//     }
+//     cout<<i<<endl;
+//     func(i-1,n);
+   
+// }
+// int main(){
+//     int n;
+//     cin>>n;
+//     func(n,n);
+// }
+
+// using backtracking
+
+
+#include<iostream>
+using namespace std;
+
+void func(int i,int n){
+    if(i>n)
+    {
+        return;
+    }
+     func(i+1,n);
+    cout<<i<<endl;
+}
+int main(){
+    int n;
+    cin>>n;
+    func(1,n);
+}
