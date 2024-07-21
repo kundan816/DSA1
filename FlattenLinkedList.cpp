@@ -2,6 +2,58 @@
 
 // using namespace std;
 
+
+
+// Brute 
+
+// Node *flatten(Node *root) {
+    
+    
+//     // using array  -->
+    
+//     Node *temp = root;
+//     vector<int> arr;
+    
+//     while(temp)
+//     {
+        
+//         arr.push_back(temp->data);
+        
+//         Node *child = temp->bottom;
+        
+//         while(child)
+//         {
+//             arr.push_back(child->data);
+//             child = child->bottom;
+//         }
+//         temp = temp->next;
+        
+//     }
+    
+//     sort(arr.begin(), arr.end());
+    
+
+//     Node* head = new Node(arr[0]);
+//     Node* mover = head;
+    
+//     for(int i=1; i<arr.size(); i++)
+//     {
+//         Node* temp = new Node(arr[i]);
+//         mover->bottom = temp;
+//         mover = temp;
+//     }
+    
+//     return head;
+    
+// }
+
+
+
+
+
+
+
+
 // // optimal
     
 // Node *merge2LL(Node *l1, Node *l2){
