@@ -185,24 +185,20 @@ void insertCopyInBetween(Node* head){
     }
 }
 
-// Function to connect random
-// pointers of the copied nodes
+// Function to connect random  pointers of the copied nodes
 void connectRandomPointers(Node* head){
     Node* temp = head;
     while(temp != NULL){
         // Access the copied node
         Node* copyNode = temp->next;    
         
-        // If the original node
-        // has a random pointer
+        // If the original node  has a random pointer
         if(temp->random){   
-             // Point the copied node's random to the
-             // corresponding copied random node
+             // Point the copied node's random to the  corresponding copied random node
             copyNode->random = temp->random->next; 
         }
         else{
-             // Set the copied node's random to
-             // null if the original random is null
+             // Set the copied node's random to  null if the original random is null
             copyNode->random = NULL;   
         }
         
@@ -211,8 +207,7 @@ void connectRandomPointers(Node* head){
     }
 }
 
-// Function to retrieve the
-// deep copy of the linked list
+// Function to retrieve the  deep copy of the linked list
 Node* getDeepCopyList(Node* head){
     Node* temp = head;
      // Create a dummy node
@@ -225,31 +220,25 @@ Node* getDeepCopyList(Node* head){
         res->next = temp->next;
         res = res->next;
 
-        // Disconnect and revert back to the
-        // initial state of the original linked list
+        // Disconnect and revert back to the initial state of the original linked list
         temp->next = temp->next->next;
         temp = temp->next;
     }
     
-     // Return the deep copy of the
-     // list starting from the dummy node
+     // Return the deep copy of the  list starting from the dummy node
     return dummyNode->next;   
 }
 
 // Function to clone the linked list
 Node *cloneLL(Node *head){
-    // If the original list
-    // is empty, return null
+    // If the original list  is empty, return null
     if(!head) return nullptr;   
     
-     // Step 1: Insert copy of
-     // nodes in between
+     // Step 1: Insert copy of  nodes in between
     insertCopyInBetween(head); 
-    // Step 2: Connect random
-    // pointers of copied nodes
+    // Step 2: Connect random  pointers of copied nodes
     connectRandomPointers(head);  
-    // Step 3: Retrieve the deep
-    // copy of the linked list
+    // Step 3: Retrieve the deep  copy of the linked list
     return getDeepCopyList(head); 
 }
 
