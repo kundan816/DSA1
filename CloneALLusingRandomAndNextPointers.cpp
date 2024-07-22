@@ -221,8 +221,7 @@ Node* getDeepCopyList(Node* head){
     Node* res = dummyNode;             
 
     while(temp != NULL){
-        // Creating a new List by
-        // pointing to copied nodes
+        // Creating a new List by pointing to copied nodes
         res->next = temp->next;
         res = res->next;
 
