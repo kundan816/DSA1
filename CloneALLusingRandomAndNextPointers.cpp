@@ -129,15 +129,13 @@ public:
     int data;           
      // Pointer to the next node
     Node *next;        
-    // Pointer to a random
-    // node in the list
+    // Pointer to a random  node in the list
     Node *random;       
 
     // Constructors for Node class
     Node() : data(0), next(nullptr), random(nullptr){}; 
     Node(int x) : data(x), next(nullptr), random(nullptr) {} 
-    // Constructor with data,
-    // next, and random pointers
+    // Constructor with data, next, and random pointers
     Node(int x, Node *nextNode, Node *randomNode) :
             data(x), next(nextNode), random(randomNode) {}  
 };
@@ -172,12 +170,10 @@ void insertCopyInBetween(Node* head){
         // Create a new node with the same data
         Node* copy = new Node(temp->data);  
         
-        // Point the copy's next to
-        // the original node's next
+        // Point the copy's next to the original node's next
         copy->next = nextElement;  
         
-        // Point the original
-        // node's next to the copy
+        // Point the original node's next to the copy
         temp->next = copy;         
 
         // Move to the next original node
