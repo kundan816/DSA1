@@ -184,7 +184,8 @@ void insertCopyInBetween(Node* head){
 // Function to connect random  pointers of the copied nodes
 void connectRandomPointers(Node* head){
     Node* temp = head;
-    while(temp != NULL){
+    while(temp != NULL)
+    {
         // Access the copied node
         Node* copyNode = temp->next;    
         
