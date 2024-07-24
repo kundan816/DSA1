@@ -61,7 +61,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int findDays(vector<int> &weights, int cap) {
+int findDays(vector<int> &weights, int cap) 
+{
     int days = 1; //First day.
     int load = 0;
     int n = weights.size(); //size of array.
@@ -72,7 +73,8 @@ int findDays(vector<int> &weights, int cap) {
             days += 1; //move to next day
             load = weights[i]; //load the weight.
         }
-        else {
+        else 
+        {
             //load the weight on the same day.
             load += weights[i];
         }
@@ -80,7 +82,8 @@ int findDays(vector<int> &weights, int cap) {
     return days;
 }
 
-int leastWeightCapacity(vector<int> &weights, int d) {
+int leastWeightCapacity(vector<int> &weights, int d) 
+{
     //Find the maximum and the summation:
     int low = *max_element(weights.begin(), weights.end());
     int high = accumulate(weights.begin(), weights.end(), 0);
