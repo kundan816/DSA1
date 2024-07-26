@@ -39,4 +39,32 @@
     
 
 
+
+
+ // Another variant
     
+    // long long CountStrings(int num){
+    //     int zeroend = 1; // "0"
+    //     int oneend = 1;  //"1"
+    //     int sum = zeroend + oneend;   // "2"
+        
+    //     if(num ==1)
+    //     {
+    //         return sum ;
+    //     }
+         
+    //     int i = 2;
+        
+    //     while(i <= n)
+    //     {
+    //         oneend = zeroend % (1000000007);
+    //         zeroend = sum % (1000000007);
+    //         sum = zeroend + oneend % (1000000007);
+            
+    //         i++;
+    //     }
+        
+    //     return sum % (1000000007);
+        
+    // }
+
