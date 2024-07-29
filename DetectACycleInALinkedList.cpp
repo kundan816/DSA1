@@ -153,9 +153,11 @@ Node* convertArrToLL(vector<int>& arr)
     return head;
 }
 
-void printLinkedList(Node* head) {
+void printLinkedList(Node* head) 
+{
     Node* temp = head;
-    while (temp != nullptr) {
+    while (temp != nullptr) 
+    {
         cout << temp->data << " ";
         temp = temp->next;
     }
