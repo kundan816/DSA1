@@ -3,9 +3,12 @@ using namespace std;
 
 class Solution {
 private: 
-        bool checkequal(int a[26] , int b[26]){
-            for(int i=0;i<26 ; i++){
-                if(a[i] != b[i]){
+        bool checkequal(int a[26] , int b[26])
+        {
+            for(int i=0;i<26 ; i++)
+            {
+                if(a[i] != b[i])
+                {
                     return 0;
                 }
             }
