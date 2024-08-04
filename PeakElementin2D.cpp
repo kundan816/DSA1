@@ -6,7 +6,8 @@ public:
     int findmax(vector<vector<int>>& mat, int col) {
         int maxi = 0;
         int max_index=0;
-        for (int i = 0; i < mat.size(); i++) {
+        for (int i = 0; i < mat.size(); i++) 
+        {
             if(mat[i][col] > maxi){
                 max_index=i;
                 maxi=mat[i][col];

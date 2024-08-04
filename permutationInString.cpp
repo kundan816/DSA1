@@ -15,7 +15,9 @@ private:
             return 1;
         }
 public:
-    bool checkInclusion(string s1 , string s2) {
+    bool checkInclusion(string s1 , string s2) 
+    {
+
 
         // character count array 
 
