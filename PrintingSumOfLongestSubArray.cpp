@@ -25,7 +25,8 @@ long long maxSubarraySum(int arr[], int n) {
         }
 
         // If sum < 0: discard the sum calculated
-        if (sum < 0) {
+        if (sum < 0) 
+        {
             sum = 0;
         }
     }
