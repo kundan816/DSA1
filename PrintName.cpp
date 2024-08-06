@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void func(int i,int n){
+void func(int i,int n)
+{
     if(i>n){
         return;
     }
