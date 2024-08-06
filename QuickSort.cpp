@@ -11,12 +11,14 @@ int main() {
     
     int arr[n];
     cout << "Enter your array elements : ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         cin >> arr[i];
     }
 
     cout << "Given array is: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
