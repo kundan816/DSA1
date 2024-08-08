@@ -70,7 +70,8 @@ void merge(vector<int> &arr, int low, int mid, int high) {
     }
 
     //  if elements on the right half are still left //
-    while (right <= high) {
+    while (right <= high) 
+    {
         temp.push_back(arr[right]);
         right++;
     }
